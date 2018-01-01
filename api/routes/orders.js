@@ -40,7 +40,7 @@ router.delete('/:orderId', (req, res, next) => {
         });
     } else {
         res.status(200).json({
-            message: 'Deleted r',
+            message: 'Deleted order',
             orderId: req.params.orderId
         });
     }
