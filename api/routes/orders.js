@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     res.status(201).json({
-       message: 'Order was created' 
+       message: 'Order was created.' 
     });
     
 });

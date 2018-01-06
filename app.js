@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan');
+
 //var dt = require('./myfirstmodule');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
-app.use('/products', productRoutes);
+app.use(morgan('dev'));
+
+// resource routes
+app.use('/products', productRoutes); 
 app.use('/orders', orderRoutes);
 
 /*
